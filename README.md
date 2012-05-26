@@ -1,9 +1,15 @@
 Playlist-Exporter
 =================
 
-Python Script: Copies all necessary files and information and aggregates it in order to make playlist sharing simple.
-
 Playlist Exporter v1.0; Patrick Killian -- pkillian@berkeley.edu
+
+Creative Commons Copyright: http://creativecommons.org/licenses/
+
+Attribution-NonCommercial-ShareAlike -- CC BY-NC-SA
+
+This license lets others remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.
+
+Python Script: Copies all necessary files and information and aggregates it in order to make playlist sharing simple.
         
         Takes a '.m3u' playlist file as input, and exports all songs 
         to a folder on user's desktop by default (a different output
