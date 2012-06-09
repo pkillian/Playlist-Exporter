@@ -37,8 +37,11 @@ def print_help():
     """ Prints help information for script. """
     print("""
         
-        Playlist Exporter v1.0; Patrick Killian -- pkillian@berkeley.edu
+        Playlist Exporter v1.2 Patrick Killian -- pkillian@berkeley.edu
         
+	MUST USE PYTHON3 WITH THIS SCRIPT. Python2 or below will NOT
+	load the playlist file correctly.
+
         Takes a '.m3u' playlist file as input, and exports all songs 
         to a folder on user's desktop by default (a different output
         location can be specified with the '-o' flag described here).
@@ -48,7 +51,7 @@ def print_help():
         newly created '.m3u' file to import directly to iTunes or 
         other music programs.
         
-        USAGE: python playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
+        USAGE: python3 playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
         
         FLAGS: 
         
