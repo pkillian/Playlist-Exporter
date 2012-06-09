@@ -1,7 +1,7 @@
 Playlist-Exporter
 =================
 
-Playlist Exporter v1.0; Patrick Killian -- pkillian@berkeley.edu
+Playlist Exporter v1.2; Patrick Killian -- pkillian@berkeley.edu
 
 Creative Commons Copyright: http://creativecommons.org/licenses/
 
