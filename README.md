@@ -11,8 +11,7 @@ This license lets others remix, tweak, and build upon your work non-commercially
 
 Python Script: Copies all necessary files and information and aggregates it in order to make playlist sharing simple.
         
-        YOU MUST USE PYTHON3 WITH THIS SCRIPT!! The file input will fail with
-	python2 or below.
+        YOU MUST USE PYTHON3 WITH THIS SCRIPT!! The file input will fail with python2 or below.
 
 	Takes a '.m3u' playlist file as input, and exports all songs 
         to a folder on user's desktop by default (a different output
