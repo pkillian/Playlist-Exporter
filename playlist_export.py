@@ -25,7 +25,7 @@
 ### BEGIN IMPORTS ###
 
 from shutil import *
-import sys, os
+import sys, os, re
 
 ### BEGIN IMPLEMENTATION ###
 
@@ -103,7 +103,8 @@ try:
     output_path = os.getenv("HOME") + "/Desktop"
     
     ### Examine flag input.
-    check_flags(sys.argv[1][1:])
+    if re.match(r"^-", sys.argv[1]):
+        check_flags(sys.argv[1][1:]) 
     
     output_path_file = output_path + '/' + filename
     songs_folder = output_path_file + '/Songs'
