@@ -14,7 +14,7 @@ Playlist Exporter: Copies all necessary files and information and aggregates it 
         
         YOU MUST USE PYTHON3 WITH THIS SCRIPT!! The file input will fail with python2 or below.
 
-	Takes a '.m3u' playlist file as input, and exports all songs 
+        Takes a '.m3u' playlist file as input, and exports all songs 
         to a folder on user's desktop by default (a different output
         location can be specified with the '-o' flag described here).
         
