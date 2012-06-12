@@ -25,7 +25,7 @@ Playlist Exporter: Copies all necessary files and information and aggregates it 
         
         USAGES: 
                 python playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
-        	./playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
+                ./playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
         FLAGS: 
         
             Combine all flags into one term: -vzD for Verbose, Zip and Delete
