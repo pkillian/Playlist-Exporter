@@ -24,7 +24,7 @@ Playlist Exporter: Copies all necessary files and information and aggregates it 
         other music programs.
         
         USAGES: 
-		python playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
+                python playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
         	./playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
         FLAGS: 
         
