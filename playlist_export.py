@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 #############################################
 #                                           #
 #  Patrick Killian - pkillian@berkeley.edu  #
@@ -36,8 +38,7 @@ class FormatError(Exception):
 def print_help():
     """ Prints help information for script. """
     print("""
-        
-        Playlist Exporter v1.2 Patrick Killian -- pkillian@berkeley.edu
+        Playlist Exporter v1.3 Patrick Killian -- pkillian@berkeley.edu
         
 	MUST USE PYTHON3 WITH THIS SCRIPT. Python2 or below will NOT
 	load the playlist file correctly.
@@ -51,7 +52,9 @@ def print_help():
         newly created '.m3u' file to import directly to iTunes or 
         other music programs.
         
-        USAGE: python3 playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
+        USAGES: 
+		python3 playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
+		./playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"	
         
         FLAGS: 
         
@@ -61,10 +64,13 @@ def print_help():
         -h -- Print help and exit. Will not complete script if -h is used at all.
         -z -- Zips playlist folder after completion.
         -o -- Allows the user to specify a different output folder. 
-        -D -- Deletes playlist file used in execution, as well as all temporary files. """)
+        -D -- Deletes playlist file used in execution, as well as all temporary files. \n""")
 
 def check_format():
     """ Raises a FormatError iff the last input item is not a '.m3u' file. """
+    if len(sys.argv) < 3:
+        print_help()
+        sys.exit(0)
     if sys.argv[-2][-4:] != '.m3u':
         raise FormatError("Wrong format. Use 'python playlist_export.py -h' for usage.")
 
