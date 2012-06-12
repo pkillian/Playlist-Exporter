@@ -3,12 +3,12 @@ Playlist-Exporter
 
 Playlist Exporter v1.3; Patrick Killian -- pkillian@berkeley.edu
 
-----------------------------------------------------------------
+
 Creative Commons Copyright: http://creativecommons.org/licenses/
 
 Attribution-NonCommercial-ShareAlike -- CC BY-NC-SA
 This license lets others remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.
-----------------------------------------------------------------
+
 
 Playlist Exporter: Copies all necessary files and information and aggregates it in order to make playlist sharing simple.
         
