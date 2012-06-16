@@ -202,10 +202,11 @@ if delete:
     if verbose:
         print("Deleting {0}...".format(sys.argv[-2]))
     os.remove(sys.argv[-2])
-    if zip:
-        if verbose:
-            print("Deleting {0}...".format(output_path_file))
-        rmtree(output_path_file)
+
+if zip:
+    if verbose:
+        print("Deleting {0}...".format(output_path_file))
+    rmtree(output_path_file)
 
 print("Done!")
 print("Enjoy!")
