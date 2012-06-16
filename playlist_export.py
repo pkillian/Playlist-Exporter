@@ -39,7 +39,7 @@ class FormatError(Exception):
 def print_help():
     """ Prints help information for script. """
     print("""
-        Playlist Exporter v1.3 Patrick Killian -- pkillian@berkeley.edu
+        Playlist Exporter v1.4 Patrick Killian -- pkillian@berkeley.edu
         
 	MUST USE PYTHON3 WITH THIS SCRIPT. Python2 or below will NOT
 	load the playlist file correctly.
@@ -110,6 +110,7 @@ try:
     delete = False
     filename = sys.argv[-1]
     m3u = open(sys.argv[-2]).read().split('\n')[:-1]
+    m3u_name = re.sub(r'.*/', "", sys.argv[-2])
     output_path = os.getenv("HOME") + "/Desktop"
     
     ### Examine flag input.
@@ -179,7 +180,7 @@ if verbose:
 
 ### OPEN FILEHANDLE; WRITE CONTENTS TO DISK
 
-new_file = open(output_path_file + '/' + filename + '.m3u', "w")
+new_file = open(output_path_file + '/' + m3u_name, "w")
 new_file.writelines(contents)
 
 if verbose:
