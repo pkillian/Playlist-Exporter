@@ -53,6 +53,7 @@ def print_help():
         other music programs.
         
         USAGES: 
+        	playlist_export [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
 		python3 playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"
 		./playlist_export.py [FLAGS: -vhzoD] /path/to/file.m3u "output filename"	
         
