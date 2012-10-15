@@ -1,5 +1,4 @@
-#!/usr/local/bin/python3
-# EDIT DEPENDING ON YOUR PYTHON3 LOCATION
+#!/usr/bin/env python3
 
 #############################################
 #                                           #
