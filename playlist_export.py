@@ -38,7 +38,7 @@ class FormatError(Exception):
 def print_help():
     """ Prints help information for script. """
     print("""
-        Playlist Exporter v1.4 Patrick Killian -- pkillian@berkeley.edu
+        Playlist Exporter v1.4.2 Patrick Killian -- pkillian@berkeley.edu
         
 	MUST USE PYTHON3 WITH THIS SCRIPT. Python2 or below will NOT
 	load the playlist file correctly.
@@ -192,8 +192,7 @@ if verbose:
 new_file.close()
 
 if zip:
-    if verbose: 
-        print("Zipping {0}...".format(output_path_file))
+    print("Zipping {0}...".format(output_path_file))
     make_archive(output_path_file, 'zip', output_path_file + '/')
     if verbose:
         print("Done!")
